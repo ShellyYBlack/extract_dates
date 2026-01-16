@@ -30,7 +30,3 @@ with open ('mediainfo-dates.csv', 'w', newline='', encoding="utf8") as csvfile:
         qtCDateText = getattr(file.com_apple_quicktime_creationdate, 'text', '')
         
         writer.writerow([fileNameText, mdateText, edateText, tdateText, rdateText, madateText, qtCDateText])
-
-
-# Run this script over multiple directories by using:
-# for dir in $HOME/born_digital/to-qc/uuid-9/*/; do cd $dir/documentation && python3 $HOME/Desktop/mediainfo_extract_dates.py; done
