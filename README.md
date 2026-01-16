@@ -1,7 +1,7 @@
 # Extract dates scripts
 These scripts extract timestamps from XML reports generating during born-digital processing.
 
-# Requirements
+## Requirements
 Install Beautiful Soup and the lxml toolkit. If you're using Python 3 on Mac or Windows, run `pip3 install beautifulsoup4 lxml`. If you're on Linux, run `sudo apt-get install python3-bs4 python3-lxml`.
 
 ## DFXML date report
@@ -11,7 +11,7 @@ This script, dfxml_dates.py, creates a CSV with the filename, mtime, and ctime f
 2. Run the script: `python3 dfxml_dates.py`
 3. Open dfxml-dates.csv in Excel and sort the columns to find the earliest date.
 
-# Mediainfo date report
+## Mediainfo date report
 This script, medainfo_dates.py, creates a CSV with the filename and various kinds of timestamps (Modified Date, Encoded Date, Tagged Date, Recorded Date, Mastered Date, and QuickTime Creation).
 
 1. Change to the directory containing your mediainfo-report.xml.
